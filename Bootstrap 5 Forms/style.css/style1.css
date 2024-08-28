@@ -1,0 +1,146 @@
+/* Global Styles */
+a {
+    text-decoration: none;
+}
+
+/* Logo */
+.logo {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Lines */
+.line {
+    background-color: #37517e;
+    width: 20px;
+    height: 2px;
+}
+
+.main-line {
+    background-color: rgb(173, 255, 80);
+    width: 5px;
+    height: 4px; /* Ensure that height is defined */
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1rem;
+    color: rgb(232, 250, 215);
+    font-weight: 400; /* Changed from 400px to 400 (font-weight does not use px) */
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    background-color: brown;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 20px 20px; /* Simplified border-radius */
+}
+
+/* Main Section */
+.main-section {
+    background-color: #37517e;
+    height: 100vh;
+}
+
+.main-section-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ensure the content is centered horizontally */
+}
+
+.main-section-container h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.main-section-container p {
+    font-size: 1rem; /* Updated from 'sans-serif' to '1rem' for consistency */
+    color: white;
+    font-weight: 200;
+}
+
+/* About Section */
+.about-right {
+    overflow: hidden;
+}
+
+.about-right img {
+    cursor: pointer;
+    transition: transform 0.5s; /* Specify property being transitioned */
+}
+
+.about-right:hover img {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Service Section */
+.service-box {
+    height: 100%;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 30px 5px rgba(0, 0, 0, 0.1); /* Added a slight shadow for visibility */
+}
+
+.fa-solid {
+    background-color: aquamarine;
+    font-size: 2rem;
+    border-radius: 50%; /* Updated to ensure circular background */
+    color: rgb(0, 123, 255);
+    transition: color .5s; /* Added a duration for color transition */
+}
+
+.service-box:hover{
+    transform: scale(1.1);
+}
+.service-box:hover .fa-solid{
+    color: rgb(126, 17, 17);
+}
+/* project */
+.project-box{
+    overflow :hidden;
+    position: relative;
+    height: 20rem;
+}
+.project-box img{
+        position: absolute;
+        top: auto;
+        width: 100%;
+        height: 100%;
+        transition: .5s;
+
+}
+.box-cover{
+        width: 100%;
+        height:100%;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: .5s;
+        background-color: 
+        
+        rgb(232, 227, 224);
+
+}
+.project-box:hover img{
+    transform: scale(1.1);
+    filter: blur(2px);
+
+    
+}
+.project-box:hover .box-cover{
+    opacity: 1;
+}
